@@ -6,7 +6,7 @@ from langchain_community.utilities import SQLDatabase
 from langchain_groq import ChatGroq
 
 # Configuração do ambiente
-os.environ["GROQ_API_KEY"] = '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'
+os.environ["GROQ_API_KEY"] = 'Sua API Key aqui'
 
 llm2 = ChatGroq(
     model="llama3-70b-8192",
@@ -14,10 +14,10 @@ llm2 = ChatGroq(
 )
 
 # Conexão com o banco de dados
-db_user = "root"
+db_user = ""
 db_password = ""
-db_host = "localhost:3306"
-db_name = "bd_empresa"
+db_host = ""
+db_name = ""
 uri_empresas = f"mysql+pymysql://{db_user}:{db_password}@{db_host}/{db_name}"
 engine = create_engine(uri_empresas)
 

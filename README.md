@@ -9,12 +9,8 @@ Este código demonstra como usar o `LangChain` e o `Groq` para criar um agente q
 O código começa importando as bibliotecas necessárias:
 
 ```python
-import time
-from sqlalchemy import create_engine
-import os
-from langchain_community.agent_toolkits import create_sql_agent
-from langchain_community.utilities import SQLDatabase
-from langchain_groq import ChatGroq
+#basta usar:
+pip install requirements.txt
 ````
 SQLAlchemy: 
 Usado para interagir com bancos de dados SQL.
